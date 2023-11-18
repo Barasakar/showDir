@@ -14,14 +14,12 @@ int main(int argc, char * argv[]) {
     if (argc - 1 <= 0) {
         usage(argv);
     } else {
-        cout << "entered here" << endl;
         string argv_string(argv[1]);
-        cout << argv_string << endl;
+        //cout << argv_string << endl;
         const std::filesystem::path path_directory{argv_string};
-
-        for (auto const& dir_entry : filesystem::directory_iterator{path_directory}) {
-            cout << dir_entry.path() << '\n';
-        }
+        cout << path_directory.generic_string() << endl;
+        reader.readPath(path_directory);
+        reader.printFormat();
     }
     
     return SUCCESS;

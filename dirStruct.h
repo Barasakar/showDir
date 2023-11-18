@@ -8,8 +8,8 @@ class dirStruct {
     std::vector<std::string> path_container;
     
     void printContainer();
-    void readPath(std::string path);
-    
+    void readPath(std::filesystem::path path);
+    void printFormat();
     private:
 
 };
