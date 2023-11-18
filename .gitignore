@@ -1,0 +1,29 @@
+# Executable files
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+
+# Object files
+*.o
+*.obj
+
+# Debug files
+*.pdb
+
+# Build folders
+build/
+bin/
+obj/
+
+# Dependency directories
+deps/
+
+# Backup files
+*~
+*.bak
+
+# Other files to ignore
+.DS_Store
+Thumbs.db
